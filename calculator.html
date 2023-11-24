@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Calculator</title>
+</head>
+<style>
+    *{
+    margin:0;
+    padding: 0;
+    user-select: none;
+
+}
+
+h1{
+    margin: 60px 0;
+    text-align: center;
+}
+
+.container{
+    max-width: 250px;
+    margin: 10px auto;
+}
+
+.display{
+    display: grid;
+    grid-template-rows: 50px; 
+    background-color:gainsboro;
+    color:white;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    align-items: center;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.col{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.item{
+    padding: 20px;
+    background: #eee;
+    border: 1px solid gray;
+}
+
+.aC{
+    grid-row-start:1;
+    grid-row-end: 2; 
+}
+.zero{
+    grid-column-start:1;
+    grid-column-end: 3;
+    text-align: center;
+    background: white;
+}
+
+.op, .equal{
+    background: yellowgreen;
+    color: white;
+}
+</style>
+<body>
+ <div class="container">
+  <h1>Calculator</h1>
+   <div class="display">0</div>
+   
+   <div class="col">
+    <div class="item ac">AC</div>
+                <div class="item plusAndMinus">+/-</div>
+    <div class="item percent">%</div>
+    <div class="item op">÷</div>
+
+    <div class="item seven">7</div>
+    <div class="item eight">8</div>
+    <div class="item nine">9</div>
+    <div class="item op">×</div>
+
+    <div class="item four">4</div>
+    <div class="item five">5</div>
+    <div class="item six">6</div>
+    <div class="item op">-</div>
+
+    <div class="item one">1</div>
+    <div class="item two">2</div>
+    <div class="item three">3</div>
+    <div class="item op">+</div>
+
+    <div class="item zero">0</div>
+    <div class="item dec">.</div>
+    <div class="item equal">=</div>
+   </div>
+  </div>
+ </body> 
+</html>
